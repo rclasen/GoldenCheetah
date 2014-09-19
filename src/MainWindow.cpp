@@ -582,6 +582,7 @@ MainWindow::MainWindow(const QDir &home)
     rideMenu->addAction(ttbAction);
 
     veloheroAction = new QAction(tr("Upload to Velo Hero..."), this);
+    veloheroAction->setShortcut(tr("Ctrl+H"));
     connect(veloheroAction, SIGNAL(triggered(bool)), this, SLOT(uploadVeloHero()));
     rideMenu->addAction(veloheroAction);
 
