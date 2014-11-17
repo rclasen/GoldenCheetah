@@ -243,7 +243,7 @@ VeloHeroUploader::dispatchReply( QNetworkReply *reply )
         parent->errorLabel->setText( tr("request failed: ")
             + reply->errorString() );
 
-        eventLoop.exec();
+        eventLoop.quit();
         return;
     }
 
